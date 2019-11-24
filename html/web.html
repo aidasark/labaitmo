@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Домашнее задание</title>
+	</head>
+	<body>
+		<h1 style="text-align: center;">Форма для отправления посылки </h1>
+		<form action="/servlet" method="get" name="Form">
+			<h3><span style="color: blue">Индекс</span></h3>
+			<div style="padding: 10px; border: 3px solid">
+				Адрес:
+					<select name="unit">
+						<option value="MIA">Северный район</option>
+						<option disabled>--Индекс района:</option>
+						<option value="Economy">1058647</option>
+						<option value="CID"></option>
+						<option value="Extremism">1027999</option>
+						<option value="Public_order">1107277</option>
+						<option value="RTS">11779988</option>
+						<option value="OAD">1158976</option>
+						<option value="Transport">16987462</option>
+						<option value="Drugs">7896561</option>
+					</select><br>
+				Адрес.,улица/номер дома:
+					<input type="text" name="reciever">
+			</div>
+			<h3 style="color: blue">От кого</h3>
+			<div style="padding: 10px; border: 3px solid">
+				<input type="radio" name="complainant" value="m" checked> мужчина
+				<input type="radio" name="complainant" value="f"> женщина<br>
+				Фамилия:<span style="color: blue">*</span>
+					<input type="text" name="surname" required><br>
+				Имя:<span style="color: blue">*</span>
+					<input type="text" name="name" required><br>
+				Отчество:
+					<input type="text" name="lastname">
+			</div>
+			<h3 style="color: blue">Дополнительно</h3>
+			<div style="padding: 10px; border: 3px solid">
+				Адрес отправления:<span style="color: blue">*</span>
+					<input type="text" name="dd" required>
+				Дата отправления:
+					<input type="text" name="phone">
+			</div>
+			<h3 style="color: blue">Комментарии:*</h3>
+				<textarea name="comment" required></textarea><br>
+			<input type="submit" value="Отправить ">
+		</form>
+		* — поля, обязательные для заполнения 
+	</body>
+</html>
