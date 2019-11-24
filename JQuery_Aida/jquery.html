@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="jQuery.js"></script>
+</head>
+<body>
+	<a href="http://vk.com" class="sn">ВК</a>
+	<a href="http://twitch.com" class="Twitch">Twitch</a>
+	<a href="http://google.com" class="Search">Google</a>
+	<a href="github.com" class="hs">Github</a>
+	<a href="http://yandex.ru" class="Search">Yandex</a>
+	<a href="http://twitter.com" class="sn">Twitter</a>
+	<a href="http://youtube.com" class="YouTube">YouTube</a>
+	<a href="http://homestuck2.com" class="hs">Homestuck2</a>
+	<a href="http://facebook.com" class="sn">Facebook</a>
+	<a href="http://bing.com" class="Search">Bing</a>
+	<p class="number">First</p>
+	<p class="number">Second</p>
+	<p class="number">Third</p>
+	<p class="hs">Web-comic</p>
+	<p class="Twitch">Streaming platform</p>
+	<form action="/servlet" method="get" name="Form">
+			<div style="padding: 10px; border: 1px solid">
+				<input type="radio" name="complainant" value="natural" checked> Физическое лицо
+				<input type="radio" name="complainant" value="legal"> Юридическое лицо<br>
+				Фамилия:<span style="color: blue">*</span>
+					<input type="text" name="surname" required><br>
+				Имя:<span style="color: blue">*</span>
+					<input type="text" name="name" required><br>
+				Отчество:
+					<input type="text" name="lastname">
+			</div>
+			<textarea name="reason" required></textarea><br>
+		</form>
+	<button style="position: absolute; top: 10px; right: 10px">revert</button>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+  $("#panel").animate({
+      left: '150px',
+      height: '+=25px',
+      width: '+=25px'
+        });
+});
+});
+</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#a1").click(function(){
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+  });
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p2").click(function(){
+    $("#div1").fadeIn();
+      });
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#p3").click(function(){
+    $("#div2").animate({left: '150px'});
+  });
+});
+</script> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#p5").click(function(){
+    $("#div5").css("fontSize", "100px");
+  });
+});
+</script> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#a5").click(function(){
+$("#a55").css("color", "orange")
+ });
+});
+</script> 
+
+
+<meta charset="utf-8">
+<title>table task</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#dcfaf4">
+<table border="1" cellpadding="35" cellspacing="0">
+
+<tr>
+<td>
+<img id="panel" src="https://i.pinimg.com/originals/fa/4e/57/fa4e57e5a187b818cca6041642d3bcce.jpg" height="150" width="150">
+<td ><button id="flip">BUTTON</button></td>
+</td>
+<tr>
+<td><p id="p1">TEXT</p></td>
+<td><button id="a1">BUTTON</button></td>
+</tr>
+
+<tr>
+<td><div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br></td>
+<td class ="a2"><button id="p2">BUTTON</button></td>
+</tr>
+
+<tr>
+<td><div id="div2" style="background:#ff0;height:45px;width:45px;position:absolute"></div></td>
+
+<td><button id="p3">BUTTON</button></td>
+</tr>
+
+<tr>
+<td class id="div5">text</td>
+<td ><button id="p5" >BUTTON</button></td>
+</tr>
+
+<tr>
+<td class id="a55">TEXT</td>
+<td ><button id="a5">BUTTON</button></td>
+</tr>
+
+</table>
+</body>
+</html>
