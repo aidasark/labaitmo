@@ -1,0 +1,47 @@
+div{
+    font-size: 20px;
+    height: 80px;
+    font-family: helvetica;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+img{
+    width: 100px;
+    height: 150px;
+}
+
+#header{ 
+    background-color: yellow;
+}
+
+#leftSidebar{
+    background-color: lime;
+    float: left;
+    width: 130px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+#rightSidebar{
+    background-color: lime;
+    float: right;
+    width: 130px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+#main{
+    background-color: orange;
+    height: 500px;
+    width: 920px;
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+#footer{ 
+background-color: red;
+}
